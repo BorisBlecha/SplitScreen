@@ -9,19 +9,18 @@
   height: 100%;
 }
 
-#page_1 {
-  flex-shrink: 1;
-  width: 100%;
-  border-right: 4px solid white;
-  background-color: #222629;
-}
+#page_1,
 #page_2 {
   flex-shrink: 1;
   width: 100%;
-  border-left: 1px solid white;
+  border-right: 2px solid white;
+  background-color: #222629;
+}
+#page_2 {
   background-color: #6b6e70;
 }
-#h1 {
+#text1,
+#text2 {
   font-size: 140px;
   font-family: "Trebuchet MS";
   color: #61892f;
@@ -30,14 +29,9 @@
   top: 25%;
   padding: 15px;
 }
-#h2 {
-  font-size: 140px;
-  font-family: "Trebuchet MS";
+#text2 {
   color: #222629;
-  position: relative;
   text-align: left;
-  top: 25%;
-  padding: 15px;
 }
 .invisible_text {
   display: none;
