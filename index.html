@@ -8,25 +8,23 @@
     <script type="text/javascript">
       function loadUrl1() {
         var url1 = document.getElementById("url1").value;
-        if (url1.length > 7) {
           if (
+            url1.strlen < 7 ||
             url1.substring(0, 7) !== "http://" ||
             url1.substring(0, 8) !== "https://"
           ) {
-            url1 = "http://" + url1;
-          }
+            url1 = "https://" + url1;
         }
         document.getElementById("frame1").src = url1;
       }
       function loadUrl2() {
         var url2 = document.getElementById("url2").value;
-        if (url2.length > 7) {
           if (
+            url1.strlen < 7 ||
             url2.substring(0, 7) !== "http://" ||
             url2.substring(0, 8) !== "https://"
           ) {
-            url2 = "http://" + url2;
-          }
+            url2 = "https://" + url2;
         }
         document.getElementById("frame2").src = url2;
       }
